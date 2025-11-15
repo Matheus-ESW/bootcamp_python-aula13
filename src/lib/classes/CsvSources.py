@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from lib.classes.FilesSources import FilesSources
 
-class CsvSoureces(FilesSources):
+class CsvSources(FilesSources):
     def create_path(self):
         current_directory = os.getcwd()
         self.folder_path = os.path.join(current_directory, 'data', 'csv_files')
